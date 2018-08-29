@@ -124,6 +124,7 @@
 }
 .custom-steps-step.active .steps-item{
     color: #69BA5C;
+
 }
 .custom-steps:before{
     top: 105px;
@@ -147,4 +148,26 @@
 }
 p.label-carrinho{
     font-size: 20px;
+}
+.conteudo-home .btn{
+    border-radius: 0;
+    font-size: 18px
+}
+.btn-menorpreco{
+    background-color: #2366B2;
+    border-color: #2366B2;
+    color: #fff;
+}
+.btn-menorpreco-verde{
+    background-color: #51b544;
+    border-color: #51b544;
+    color: #fff;
+}
+.btn-menorpreco:hover{
+    background-color: #104173;
+    border-color: #104173;
+}
+.btn-menorpreco-verde:hover{
+    background-color: #21840f;
+    border-color: #21840f;
 }
