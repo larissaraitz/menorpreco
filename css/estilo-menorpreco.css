@@ -135,3 +135,16 @@
     background-color: #3F668E;
     padding-right: 30px;
 }
+.tabela-itens-carrinho .form-check-input {
+    position: relative;
+    margin-top: auto;
+    margin-left: auto;
+}
+.tabela-itens-carrinho{
+    border-width: 1px 1px 1px 1px;
+    border-color: #dee2e6;
+    border-style: solid;
+}
+p.label-carrinho{
+    font-size: 20px;
+}
