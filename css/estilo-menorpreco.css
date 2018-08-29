@@ -13,7 +13,7 @@
 .nav-item {
     color: #fff;
     font-size: 18px;
-    text-shadow: 1px 1px 10px #113254;
+    text-shadow: 2px 2px 3px #104173;
 }
 .nav-item:hover{
     color: #fff;
@@ -40,6 +40,8 @@
     position: absolute;
     top: 30px;
     left: 2%;
+    box-shadow: 1px 1px 5px #113254;
+    border-radius: 13px;
 }
 .input-pesquisa-home{
     width: 100%;
@@ -100,7 +102,7 @@
     width: 100%;
 }
 .custom-steps{
-    padding: 40px 0;
+    padding: 70px 0 50px 0;
 }
 .custom-steps-step{
     width: 70px;
@@ -108,11 +110,28 @@
     padding: 18px;
     font-size: 24px;
     text-align: center;
-    border: 3px solid #104173;
+    border: 3px solid #3F668E;
     border-radius: 35px;
-    opacity: 0.8;
+    box-shadow: 0px 0px 5px #365d84;
+    background-color: #fff;
+    z-index: 1;
 }
-.steps-item{
-    color: #104173;
-    
+.custom-steps-step .steps-item{
+    color: #3F668E; 
+}
+.custom-steps-step.active{
+    border-color: #69BA5C;
+}
+.custom-steps-step.active .steps-item{
+    color: #69BA5C;
+}
+.custom-steps:before{
+    top: 105px;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 95%;
+    background-color: #3F668E;
+    padding-right: 30px;
 }
