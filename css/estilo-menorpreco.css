@@ -1,7 +1,12 @@
+/*GERAL*/
 *{
     margin: 0;
     font-family: 'Hind', sans-serif;
 }
+input, input.form-control{
+    border-radius: 0;
+}
+/*NAVBAR*/
 .navbar{
     width: 100%;
     min-height: 90px;
@@ -18,7 +23,6 @@
 .nav-item:hover{
     color: #fff;
 }
-
 .nav-item.nav-localizacao{
     font-weight: bold;
     text-transform: uppercase;
@@ -26,13 +30,6 @@
 .nav-item .fa-map-marker-alt{
     margin-left: 5px;
     color: #86BF3C;
-}
-.pesquisa-home{
-    height: 500px;
-    background-color: #2366b2;
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-    padding: 180px;
 }
 .logo-nav{
     display: block;
@@ -43,64 +40,7 @@
     box-shadow: 1px 1px 5px #113254;
     border-radius: 13px;
 }
-.input-pesquisa-home{
-    width: 100%;
-    height: 45px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    padding: 0 15px 0 21px;
-    box-shadow: 2px 2px 10px #205EA0;
-
-}
-.input-pesquisa-home input{
-    padding: 6px 0;
-    height: 43px;
-    font-size: 18px;
-    color: #555;
-    border: none;
-    width:85%;
-}
-.submit-pequisa-home{
-    width: 10%;
-    height: 36px;
-    padding: 9px 0px 9px 20px;
-    font-size: 25px;
-    border-radius: 25px;
-    background-color: #fff;
-    border:none;
-    color: #86BF3C;
-    float: right;
-    
-}
-.nova-busca p{
-    font-size: 28px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 2px 2px 10px #153e69;
-}
-.ou-spn-home{
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 42px;
-    margin-top: 50px;
-    opacity: 1.0 !important;
-    text-shadow: 2px 2px 10px #153e69;
-}
-.submit-pequisa-home .fas{
-    float: right;
-}
-.submit-pequisa-home:hover{
-    color: #389300;
-}
-.submit-pequisa-home:focus, .input-pesquisa-home input:focus{
-    outline: 0;
-}
-.wp-100{
-    width: 100%;
-}
+/*STEPS*/
 .custom-steps{
     padding: 70px 0 50px 0;
 }
@@ -136,19 +76,18 @@
     background-color: #3F668E;
     padding-right: 30px;
 }
-.tabela-itens-carrinho .form-check-input {
+/*TABELA*/
+.tabela-menorpreco .form-check-input {
     position: relative;
     margin-top: auto;
     margin-left: auto;
 }
-.tabela-itens-carrinho{
+.tabela-menorpreco{
     border-width: 1px 1px 1px 1px;
     border-color: #dee2e6;
     border-style: solid;
 }
-p.label-carrinho{
-    font-size: 20px;
-}
+/*BOTÕES*/
 .conteudo-home .btn{
     border-radius: 0;
     font-size: 18px
@@ -171,3 +110,85 @@ p.label-carrinho{
     background-color: #21840f;
     border-color: #21840f;
 }
+/*MODAL*/
+.modal-dialog{
+    max-width: 1200px;
+}
+
+/*HOME*/
+.pesquisa-home{
+    height: 500px;
+    background-color: #2366b2;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    padding: 180px;
+}
+.input-pesquisa-home{
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 0 15px 0 21px;
+    box-shadow: 2px 2px 10px #205EA0;
+
+}
+.input-pesquisa-home input{
+    padding: 6px 0;
+    height: 43px;
+    font-size: 18px;
+    color: #555;
+    border: none;
+    width:85%;
+}
+.submit-pequisa-home{
+    width: 10%;
+    height: 36px;
+    padding: 9px 0px 9px 20px;
+    font-size: 25px;
+    border-radius: 25px;
+    background-color: #fff;
+    border:none;
+    color: #86BF3C;
+    float: right;
+    
+}
+.submit-pequisa-home .fas{
+    float: right;
+}
+.submit-pequisa-home:hover{
+    color: #389300;
+}
+.submit-pequisa-home:focus, .input-pesquisa-home input:focus{
+    outline: 0;
+}
+.nova-busca p{
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px #153e69;
+}
+.ou-spn-home{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 42px;
+    margin-top: 50px;
+    opacity: 1.0 !important;
+    text-shadow: 2px 2px 10px #153e69;
+}
+/*CARRINHO*/
+p.label-carrinho{
+    font-size: 20px;
+}
+
+/*GENERICO*/
+    /*TAMANHOS*/
+        .wp-100{
+            width: 100%;
+        }
+    /*MARGEM*/
+        .mb-15{
+            margin-bottom: 15px;
+        }

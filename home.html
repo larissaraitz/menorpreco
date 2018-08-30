@@ -29,12 +29,12 @@
             <div class="pesquisa-home">
                 <!--<div class="container">-->
                     <div class="row">
-                        <div class="col-md-5 nova-busca">
+                        <div class="col-md-5 nova-busca text-center">
                             <p>Realizar nova pesquisa</p>
                             <span>É só digitar o nome do produto, marca ou o código de barras.</span>
                             <div class="input-pesquisa-home">
-                                <input type="email">
-                                <button class="submit-pequisa-home">
+                                <input>
+                                <button class="submit-pequisa-home" type="button" data-toggle="modal" data-target="#exampleModal">
                                     <span class="fas fa-search"></span>
                                 </button>
                             </div>
@@ -45,8 +45,8 @@
                         <div class="col-md-5 nova-busca">
                             <p>Acessar lista existente</p>
                             <div class="input-pesquisa-home">
-                                <input type="email">
-                                <button class="submit-pequisa-home" type="button" data-toggle="modal" data-target="#exampleModal">
+                                <input>
+                                <button class="submit-pequisa-home">
                                     <span class="fas fa-search"></span>
                                 </button>
                             </div>
@@ -54,40 +54,55 @@
                     </div>
                     <!--</div>-->
                 </div>
-            </div>
-            <div class="modal-adc-produto">
-                <div class="container">
-                    <div class="row">   
-                        <div class="col-md-10">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div class="modal fade modal-adc-produto" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <div class="container">
+                                    <div class="row mb-15">
+                                        <div class="col-12 text-center">
+                                            <h5 class="modal-title">Busca de Produtos</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-15">
+                                        <div class="col-10">
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="button" class="btn btn-menorpreco wp-100">Buscar</button>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-15">
+                                        <div class="col-12">
+                                            <table class="table table-striped tabela-menorpreco">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"> <input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
+                                                        <th scope="col">Cod. Barras</th>
+                                                        <th scope="col">Descrição</th>
+                                                        <th scope="col">Extra</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">   
+                                        <button type="button" class="btn btn-menorpreco">Adicionar</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            <button type="button" class="btn btn-primary">Primary</button>
-                        </div>
-                    </div>
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-12">
-                            <table class="table table-striped">
-                                <thead>
-                                <tr>
-                                    <th scope="col"> <input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
-                                    <th scope="col">Cod. Barras</th>
-                                    <th scope="col">Descrição</th>
-                                    <th scope="col">Extra</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-md-12">
-                        <button type="button" class="btn btn-primary">Primary</button>
                     </div>
                 </div>
             </div>
@@ -95,5 +110,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src="bootstrap/js/bootstrap.js"></script>
+        <script>
+
+        </script>
     </body>
 </html>
