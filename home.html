@@ -15,9 +15,10 @@
                 <div class="logo-nav">
                     <img src="images/logo_menorpreco.png">
                 </div>
-                <div class="navbar-nav mr-auto">
-                    <!--<a class="nav-item nav-link" href="#">O que é<span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#">Link</a>-->
+                <div class="navbar-nav mr-auto ml-150">
+                    <a class="nav-item nav-link" href="#">Menor Preço</a>
+                    <a class="nav-item nav-link" href="#">O que é</a>
+                    <a class="nav-item nav-link" href="#">Dúvidas Frequentes</a>
                 </div>
                 <div class="navbar-nav my-2 my-lg-0">
                     <a class="nav-item nav-link" href="#"><span class="border-hover">Sair</span></a>
@@ -28,10 +29,15 @@
         <div class="conteudo-home">
             <div class="pesquisa-home">
                 <!--<div class="container">-->
+                   <!-- <div class="row justify-content-md-center">
+                        <div class="col-md-8 text-center">
+                            <h1>encontre o preço de referência <br> para produtos em todo o estado do paraná.</h1>
+                        </div>
+                    </div>-->
                     <div class="row">
                         <div class="col-md-5 nova-busca text-center">
-                            <p>Realizar nova pesquisa</p>
-                            <span>É só digitar o nome do produto, marca ou o código de barras.</span>
+                            <p>procurar preço de referência</p>
+                            <span>É só digitar o nome do produto ou o código de barras.</span>
                             <div class="input-pesquisa-home">
                                 <input>
                                 <button class="submit-pequisa-home" type="button" data-toggle="modal" data-target="#exampleModal">
@@ -42,8 +48,9 @@
                         <div class="col-md-2 ou-spn-home">
                             <span>ou</span>
                         </div>
-                        <div class="col-md-5 nova-busca">
-                            <p>Acessar lista existente</p>
+                        <div class="col-md-5 nova-busca text-center">
+                            <p>Validar documento oficial</p>
+                            <span>Validar ou consultar preço de referência calculado anteriormente.</span>
                             <div class="input-pesquisa-home">
                                 <input>
                                 <button class="submit-pequisa-home">
@@ -80,18 +87,30 @@
                                             <table class="table table-striped tabela-menorpreco">
                                                 <thead>
                                                     <tr>
-                                                        <th scope="col"> <input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
-                                                        <th scope="col">Cod. Barras</th>
-                                                        <th scope="col">Descrição</th>
-                                                        <th scope="col">Extra</th>
+                                                        <th class="text-center" scope="col"> <input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
+                                                        <th class="text-center" scope="col">Cod. Barras</th>
+                                                        <th class="text-center" scope="col">Descrição</th>
+                                                        <th class="text-center" scope="col">Extra</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>Mark</td>
-                                                        <td>Otto</td>
-                                                        <td>@mdo</td>
+                                                        <th class="text-center" scope="row"><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
+                                                        <td class="text-center">7890000000222</td>
+                                                        <td class="text-center">CANETA ESFEROGRAFICA ELETRONICA</td>
+                                                        <td class="text-center icone-tabela"><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="ELETRIFICADOR DE CERCA SOLAR MONITOR SM140 B (1)"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-center" scope="row"><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
+                                                        <td class="text-center">7909438001494</td>
+                                                        <td class="text-center">PEÇA - Caneta Uni Signo TSI Caixa c 24 Blister c 1 Unidades Azul</td>
+                                                        <td class="text-center icone-tabela"><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="CANETA ESFEROGRAFICA GEL 0 7MM SIGNO TSI APAGAVEL AZUL UNIBALL BT 1 UN (1)"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-center" scope="row"><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
+                                                        <td class="text-center">7909438001517</td>
+                                                        <td class="text-center">PEÇA - Caneta Uni Signo TSI Caixa c 24 Blister c 1 Unidades Preta</td>
+                                                        <td class="text-center icone-tabela"><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="CANETA ESFEROGRAFICA GEL 0 7MM SIGNO TSI APAGAVEL PRETO UNIBALL BT 1 UN (1)"></i></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -111,7 +130,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src="bootstrap/js/bootstrap.js"></script>
         <script>
-
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
         </script>
     </body>
 </html>
