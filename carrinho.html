@@ -85,10 +85,73 @@
                         </table>
                     </div>
                     <div class="col-md-6">
-                        <button type="button" class="btn btn-menorpreco-verde">Buscar mais produtos</button>
+                        <button type="button" class="btn btn-menorpreco-verde" data-toggle="modal" data-target="#exampleModal">Buscar mais produtos</button>
                     </div>
                     <div class="col-md-6 text-right">
-                        <button type="button" class="btn btn-menorpreco">Continuar Filtros</button>
+                        <button type="button" class="btn btn-menorpreco disabled">Continuar Filtros</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-adc-produto" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="container">
+                                <div class="row mb-15">
+                                    <div class="col-12 text-center">
+                                        <h5 class="modal-title">Busca de Produtos</h5>
+                                    </div>
+                                </div>
+                                <div class="row mb-15">
+                                    <div class="col-10">
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-2">
+                                        <button type="button" class="btn btn-menorpreco wp-100">Buscar</button>
+                                    </div>
+                                </div>
+                                <div class="row mb-15">
+                                    <div class="col-12">
+                                        <table class="table table-striped tabela-menorpreco">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center" scope="col"> <input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
+                                                    <th class="text-center" scope="col">Cod. Barras</th>
+                                                    <th class="text-center" scope="col">Descrição</th>
+                                                    <th class="text-center" scope="col">Extra</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="text-center" scope="row"><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
+                                                    <td class="text-center">7890000000222</td>
+                                                    <td class="text-center">CANETA ESFEROGRAFICA ELETRONICA</td>
+                                                    <td class="text-center icone-tabela"><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="ELETRIFICADOR DE CERCA SOLAR MONITOR SM140 B (1)"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-center" scope="row"><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
+                                                    <td class="text-center">7909438001494</td>
+                                                    <td class="text-center">PEÇA - Caneta Uni Signo TSI Caixa c 24 Blister c 1 Unidades Azul</td>
+                                                    <td class="text-center icone-tabela"><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="CANETA ESFEROGRAFICA GEL 0 7MM SIGNO TSI APAGAVEL AZUL UNIBALL BT 1 UN (1)"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-center" scope="row"><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
+                                                    <td class="text-center">7909438001517</td>
+                                                    <td class="text-center">PEÇA - Caneta Uni Signo TSI Caixa c 24 Blister c 1 Unidades Preta</td>
+                                                    <td class="text-center icone-tabela"><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="CANETA ESFEROGRAFICA GEL 0 7MM SIGNO TSI APAGAVEL PRETO UNIBALL BT 1 UN (1)"></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="text-center">   
+                                    <button onclick="window.location.href='carrinho.html';" type="button" class="btn btn-menorpreco">Adicionar</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
