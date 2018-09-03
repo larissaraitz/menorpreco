@@ -13,7 +13,7 @@
         <div class="header-home">
             <nav class="navbar navbar-expand-lg">
                 <div class="logo-nav">
-                   <img src="images/logo_menorpreco.png">
+                   <img src="images/logo_menorpreco.png" onclick="window.location.href='home.html';">
                 </div>
                 <div class="navbar-nav mr-auto ml-150">
                     <a class="nav-item nav-link" href="#">Menor Preço</a>
@@ -29,17 +29,29 @@
         <div class="container">
             <div class="col-md-12">
                 <div class="custom-steps d-flex justify-content-between">
-                    <div class="custom-steps-step active" data-toggle="tooltip" data-placement="top" title="Consulta">
-                        <a href="#step-1" class="steps-item"><i class="fas fa-search" aria-hidden="true"></i></a>
+                    <div class="step-desc active">
+                        <div class="custom-steps-step">
+                            <a href="#step-1" class="steps-item"><i class="fas fa-search" aria-hidden="true"></i></a>
+                        </div>
+                        <a>Consulta</a>
                     </div>
-                    <div class="custom-steps-step" data-toggle="tooltip" data-placement="top" title="Filtro">
-                        <a href="#step-2" class="steps-item"><i class="fas fa-filter" aria-hidden="true"></i></a>
+                    <div class="step-desc">
+                        <div class="custom-steps-step">
+                            <a href="#step-2" class="steps-item"><i class="fas fa-filter" aria-hidden="true"></i></a>
+                        </div>
+                        <a>Filtro</a>
                     </div>
-                    <div class="custom-steps-step" data-toggle="tooltip" data-placement="top" title="Preço Referencia">
-                        <a href="#step-3" class="steps-item"><i class="fas fa-dollar-sign" aria-hidden="true"></i></a>
+                    <div class="step-desc">
+                        <div class="custom-steps-step">
+                            <a href="#step-3" class="steps-item"><i class="fas fa-dollar-sign" aria-hidden="true"></i></a>
+                        </div>
+                        <a>Preço Referência</a>
                     </div>
-                    <div class="custom-steps-step" data-toggle="tooltip" data-placement="top" title="Documento">
-                        <a href="#step-4" class="steps-item"><i class="far fa-file-alt" aria-hidden="true"></i></a>
+                    <div class="step-desc">
+                        <div class="custom-steps-step">
+                            <a href="#step-4" class="steps-item"><i class="far fa-file-alt" aria-hidden="true"></i></a>
+                        </div>
+                        <a>Documento</a>
                     </div>
                 </div>
             </div>
@@ -59,33 +71,44 @@
                                     <th class="text-center" scope="col"></th>
                                     <th class="text-center" scope="col">Cod. Barras</th>
                                     <th class="text-center" scope="col">Descrição</th>
-                                    <th class="text-center" scope="col">Extra</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th class="text-center icone-tabela" scope="row"><i class="fas fa-times-circle"></i></th>
                                     <td class="text-center">7890000000222</td>
-                                    <td class="text-center">CANETA ESFEROGRAFICA ELETRONICA</td>
-                                    <td class="text-center icone-tabela"><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="ELETRIFICADOR DE CERCA SOLAR MONITOR SM140 B (1)"></i></td>
+                                    <td>
+                                        CANETA ESFEROGRAFICA ELETRONICA
+                                        <div class="desc-produtos">
+                                            ELETRIFICADOR DE CERCA SOLAR MONITOR SM140 B (1)
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th class="text-center icone-tabela" scope="row"><i class="fas fa-times-circle"></i></th>
                                     <td class="text-center">7909438001494</td>
-                                    <td class="text-center">PEÇA - Caneta Uni Signo TSI Caixa c 24 Blister c 1 Unidades Azul</td>
-                                    <td class="text-center icone-tabela"><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="CANETA ESFEROGRAFICA GEL 0 7MM SIGNO TSI APAGAVEL AZUL UNIBALL BT 1 UN (1)"></i></td>
+                                    <td>
+                                        PEÇA - Caneta Uni Signo TSI Caixa c 24 Blister c 1 Unidades Azul
+                                        <div class="desc-produtos">
+                                            CANETA ESFEROGRAFICA GEL 0 7MM SIGNO TSI APAGAVEL AZUL UNIBALL BT 1 UN (1)
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th class="text-center icone-tabela" scope="row"><i class="fas fa-times-circle"></i></th>
                                     <td class="text-center">7909438001517</td>
-                                    <td class="text-center">PEÇA - Caneta Uni Signo TSI Caixa c 24 Blister c 1 Unidades Preta</td>
-                                    <td class="text-center icone-tabela"><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="CANETA ESFEROGRAFICA GEL 0 7MM SIGNO TSI APAGAVEL PRETO UNIBALL BT 1 UN (1)"></i></td>
+                                    <td>
+                                        PEÇA - Caneta Uni Signo TSI Caixa c 24 Blister c 1 Unidades Preta
+                                        <div class="desc-produtos">
+                                            CANETA ESFEROGRAFICA GEL 0 7MM SIGNO TSI APAGAVEL PRETO UNIBALL BT 1 UN (1)
+                                        </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <div class="col-md-6">
-                        <button type="button" class="btn btn-menorpreco-verde" data-toggle="modal" data-target="#exampleModal">Buscar mais produtos</button>
+                        <button type="button" class="btn btn-menorpreco-verde" data-toggle="modal" data-target="#exampleModal">Buscar Produtos</button>
                     </div>
                     <div class="col-md-6 text-right">
                         <button type="button" class="btn btn-menorpreco disabled">Continuar Filtros</button>
@@ -121,27 +144,38 @@
                                                     <th class="text-center" scope="col"> <input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
                                                     <th class="text-center" scope="col">Cod. Barras</th>
                                                     <th class="text-center" scope="col">Descrição</th>
-                                                    <th class="text-center" scope="col">Extra</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <th class="text-center" scope="row"><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
                                                     <td class="text-center">7890000000222</td>
-                                                    <td class="text-center">CANETA ESFEROGRAFICA ELETRONICA</td>
-                                                    <td class="text-center icone-tabela"><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="ELETRIFICADOR DE CERCA SOLAR MONITOR SM140 B (1)"></i></td>
+                                                    <td>
+                                                        CANETA ESFEROGRAFICA ELETRONICA
+                                                        <div class="desc-produtos">
+                                                            ELETRIFICADOR DE CERCA SOLAR MONITOR SM140 B (1)
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <th class="text-center" scope="row"><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
                                                     <td class="text-center">7909438001494</td>
-                                                    <td class="text-center">PEÇA - Caneta Uni Signo TSI Caixa c 24 Blister c 1 Unidades Azul</td>
-                                                    <td class="text-center icone-tabela"><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="CANETA ESFEROGRAFICA GEL 0 7MM SIGNO TSI APAGAVEL AZUL UNIBALL BT 1 UN (1)"></i></td>
+                                                    <td>
+                                                        PEÇA - Caneta Uni Signo TSI Caixa c 24 Blister c 1 Unidades Azul
+                                                        <div class="desc-produtos">
+                                                            CANETA ESFEROGRAFICA GEL 0 7MM SIGNO TSI APAGAVEL AZUL UNIBALL BT 1 UN (1)
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <th class="text-center" scope="row"><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
                                                     <td class="text-center">7909438001517</td>
-                                                    <td class="text-center">PEÇA - Caneta Uni Signo TSI Caixa c 24 Blister c 1 Unidades Preta</td>
-                                                    <td class="text-center icone-tabela"><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="CANETA ESFEROGRAFICA GEL 0 7MM SIGNO TSI APAGAVEL PRETO UNIBALL BT 1 UN (1)"></i></td>
+                                                    <td>
+                                                        PEÇA - Caneta Uni Signo TSI Caixa c 24 Blister c 1 Unidades Preta
+                                                        <div class="desc-produtos">
+                                                            CANETA ESFEROGRAFICA GEL 0 7MM SIGNO TSI APAGAVEL PRETO UNIBALL BT 1 UN (1)
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>

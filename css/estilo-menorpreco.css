@@ -39,10 +39,12 @@ input, input.form-control{
     left: 2%;
     box-shadow: 1px 1px 5px #113254;
     border-radius: 13px;
+    cursor: pointer;
 }
 /*STEPS*/
 .custom-steps{
     padding: 70px 0 50px 0;
+    cursor: default;
 }
 .custom-steps-step{
     width: 70px;
@@ -54,17 +56,17 @@ input, input.form-control{
     border-radius: 35px;
     box-shadow: 0px 0px 5px #365d84;
     background-color: #fff;
-    z-index: 1;
+    margin: auto auto 2px;
 }
 .custom-steps-step .steps-item{
-    color: #3F668E; 
+    color: #3F668E;
+    cursor: default; 
 }
-.custom-steps-step.active{
+.active .custom-steps-step{
     border-color: #69BA5C;
 }
-.custom-steps-step.active .steps-item{
+.active .custom-steps-step .steps-item{
     color: #69BA5C;
-
 }
 .custom-steps:before{
     top: 105px;
@@ -76,6 +78,19 @@ input, input.form-control{
     background-color: #3F668E;
     padding-right: 30px;
 }
+.step-desc{
+    z-index: 1;
+    text-align: center;
+    color: #3F668E;
+    font-size: 18px;
+}
+.step-desc.active{
+    color: #46aa34;
+}
+.step-desc.active{
+    transform: scale(1.2);
+}
+
 /*TABELA*/
 .tabela-menorpreco .form-check-input {
     position: relative;
@@ -89,7 +104,11 @@ input, input.form-control{
 }
 .tabela-menorpreco .icone-tabela{
     font-size: 22px;
-    padding: 10px 10px 0px 10px;
+    vertical-align: middle;
+}
+.desc-produtos{
+    font-size: 14px;
+    opacity: 0.8;
 }
 /*BOTÕES*/
 .conteudo-home .btn{
@@ -145,6 +164,26 @@ input, input.form-control{
     box-shadow: 2px 2px 10px #205EA0;
     margin-top: 10px
 }
+.botao-pesquisa-home{
+    width: 100%;
+    height: 45px;
+    background-color: #86BF3C;
+    border: 1px solid #6eaa20;
+    border-radius: 25px;
+    padding: 0 15px 0 21px;
+    box-shadow: 2px 2px 10px #205EA0;
+    margin-top: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.botao-pesquisa-home:hover{
+    background-color: #70ad20;
+    text-shadow: 1px 1px 5px #477a00;
+}
 .input-pesquisa-home input{
     padding: 6px 0;
     height: 43px;
@@ -191,6 +230,14 @@ input, input.form-control{
     margin-top: 50px;
     color: #ebf4ff;
     text-shadow: 2px 2px 5px #153e69;
+}
+.nova-busca:hover{
+    transform: scale(1.05);
+    transition-duration: 1s;
+}
+.nova-busca:not( :hover ){
+    transform: scale(1.0);
+    transition-duration: 1s;
 }
 /*CARRINHO*/
 p.label-carrinho{
