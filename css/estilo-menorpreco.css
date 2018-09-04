@@ -3,7 +3,7 @@
     margin: 0;
     font-family: 'Hind', sans-serif;
 }
-input, input.form-control, select, select.form-control{
+.form-control{
     border-radius: 0;
 }
 .form-control:focus {
@@ -310,7 +310,12 @@ p.label-carrinho{
     }
     .hide {
         display: none;
-      }
+    }
+    .btn-fixo{
+        position: fixed;
+        bottom: 30px;
+        right: 250px;
+    }
     /*TAMANHOS*/
         .wp-100{
             width: 100%;
