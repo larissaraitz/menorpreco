@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="UTF-8">
+        <title>Menor Preço Compras</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/estilo-menorpreco.css">
+        <link rel="stylesheet" href="fontawesome/css/all.css" >
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind">
+    </head>
+    <body> 
+        <div class="header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="logo-nav">
+                    <img src="images/logo_menorpreco.png" onclick="window.location.href='home.html';">
+                </div>
+                <div class="navbar-nav mr-auto ml-150">
+                    <a class="nav-item nav-link" href="#">Menor Preço</a>
+                    <a class="nav-item nav-link" href="#">O que é</a>
+                    <a class="nav-item nav-link" href="#">Dúvidas Frequentes</a>
+                </div>
+                <div class="navbar-nav my-2 my-lg-0">
+                    <a class="nav-item nav-link" href="#"><span class="border-hover">Sair</span></a>
+                    <a class="nav-item nav-link nav-localizacao" href="#">Curitiba<span class="fas fa-map-marker-alt"></span></a>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="custom-steps d-flex justify-content-between">
+                    <div class="step-desc">
+                        <div class="custom-steps-step">
+                            <a href="#step-1" class="steps-item"><i class="fas fa-search" aria-hidden="true"></i></a>
+                        </div>
+                        <a>Consulta</a>
+                    </div>
+                    <div class="step-desc active">
+                        <div class="custom-steps-step">
+                            <a href="#step-2" class="steps-item"><i class="fas fa-filter" aria-hidden="true"></i></a>
+                        </div>
+                        <a>Filtro</a>
+                    </div>
+                    <div class="step-desc">
+                        <div class="custom-steps-step">
+                            <a href="#step-3" class="steps-item"><i class="fas fa-dollar-sign" aria-hidden="true"></i></a>
+                        </div>
+                        <a>Preço Referência</a>
+                    </div>
+                    <div class="step-desc">
+                        <div class="custom-steps-step">
+                            <a href="#step-4" class="steps-item"><i class="far fa-file-alt" aria-hidden="true"></i></a>
+                        </div>
+                        <a>Documento</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="container">
+                <div class="row">   
+                    <div class="col-md-12">
+                        <p class="label-carrinho">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim arcu, ultricies in tincidunt ut, lacinia quis mi. Sed euismod nibh tempor, convallis mi in, volutpat massa. Fusce quis justo nec augue malesuada rhoncus.</p>
+                    </div>
+                </div>
+                <div class="row mb-15">
+                    <div class="col-6">
+                        <label for="formControlRange">Região:</label>
+                        <select class="form-control">
+                            <option>NORTE</option>
+                            <option>NORDESTE</option>
+                            <option>CENTRO-OESTE</option>
+                            <option>SUDESTE</option>
+                            <option>SUL</option>
+                        </select>
+                    </div>
+                    <!--<div class="row mb-15">-->
+                        <div class="col-6">
+                            <label for="formControlRange">Período:</label>
+                            <div class="slidecontainer">
+                                <input type="range" min="1" max="6" value="1" class="slider" id="myRange">
+                                <p><span id="demo"></span> Mês</p>
+                            </div>
+                        </div>
+                    <!--</div>-->
+                </div>
+                <div class="row mb-15">
+                    <div class="col-md-6">
+                        <!--<button type="button" class="btn btn-menorpreco-verde" data-toggle="modal" data-target="#exampleModal">Buscar Produtos</button>-->
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <button type="button" class="btn btn-menorpreco" onclick="window.location.href='filtro.html';">Continuar Preço Referência</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value;
+
+            slider.oninput = function() {
+            output.innerHTML = this.value;
+            }
+        </script>
+    </body>
+</html>

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>  
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <meta charset="UTF-8">
-            <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-            <link rel="stylesheet" type="text/css" href="css/estilo-menorpreco.css">
-            <link rel="stylesheet" href="fontawesome/css/all.css" >
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="UTF-8">
+        <title>Menor Preço Compras</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/estilo-menorpreco.css">
+        <link rel="stylesheet" href="fontawesome/css/all.css" >
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind">
     </head>
     <body>
-        <div class="header-home">
+        <div class="header">
             <nav class="navbar navbar-expand-lg">
                 <div class="logo-nav">
                    <img src="images/logo_menorpreco.png" onclick="window.location.href='home.html';">
@@ -56,11 +57,47 @@
                 </div>
             </div>
         </div>
-        <div class="conteudo-home">
+        <div class="conteudo">
             <div class="container">
                 <div class="row">   
                     <div class="col-md-12">
                         <p class="label-carrinho">Pesquise e adicione todos os GTINs que se encaixam com o produto que você pretende consultar.</p>
+                    </div>
+                </div>
+                <div class="row mb-15">
+                    <div class="col-12">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" onclick="window.toggleTable()" style="z-index:2;">
+                        <table class="table autocomplete-carrinho hide">
+                            <tbody>
+                                <tr>
+                                    <th class="text-center icone-tabela" scope="row" onclick="window.toggleIcon()"><i class="fas fa-plus"></i></th>
+                                    <td>
+                                        CANETA ESFEROGRAFICA ELETRONICA
+                                        <div class="desc-produtos">
+                                            ELETRIFICADOR DE CERCA SOLAR MONITOR SM140 B (1)
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center icone-tabela" scope="row"><i class="fas fa-plus"></i></th>
+                                    <td>
+                                        PEÇA - Caneta Uni Signo TSI Caixa c 24 Blister c 1 Unidades Azul
+                                        <div class="desc-produtos">
+                                            CANETA ESFEROGRAFICA GEL 0 7MM SIGNO TSI APAGAVEL AZUL UNIBALL BT 1 UN (1)
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center icone-tabela" scope="row"><i class="fas fa-plus"></i></th>
+                                    <td>
+                                        PEÇA - Caneta Uni Signo TSI Caixa c 24 Blister c 1 Unidades Preta
+                                        <div class="desc-produtos">
+                                            CANETA ESFEROGRAFICA GEL 0 7MM SIGNO TSI APAGAVEL PRETO UNIBALL BT 1 UN (1)
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
                 <div class="row justify-content-md-center">
@@ -108,84 +145,10 @@
                         </table>
                     </div>
                     <div class="col-md-6">
-                        <button type="button" class="btn btn-menorpreco-verde" data-toggle="modal" data-target="#exampleModal">Buscar Produtos</button>
+                        <!--<button type="button" class="btn btn-menorpreco-verde" data-toggle="modal" data-target="#exampleModal">Buscar Produtos</button>-->
                     </div>
                     <div class="col-md-6 text-right">
-                        <button type="button" class="btn btn-menorpreco disabled">Continuar Filtros</button>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-adc-produto" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <div class="container">
-                                <div class="row mb-15">
-                                    <div class="col-12 text-center">
-                                        <h5 class="modal-title">Busca de Produtos</h5>
-                                    </div>
-                                </div>
-                                <div class="row mb-15">
-                                    <div class="col-10">
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="col-2">
-                                        <button type="button" class="btn btn-menorpreco wp-100">Buscar</button>
-                                    </div>
-                                </div>
-                                <div class="row mb-15">
-                                    <div class="col-12">
-                                        <table class="table table-striped tabela-menorpreco">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-center" scope="col"> <input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
-                                                    <th class="text-center" scope="col">Cod. Barras</th>
-                                                    <th class="text-center" scope="col">Descrição</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th class="text-center" scope="row"><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
-                                                    <td class="text-center">7890000000222</td>
-                                                    <td>
-                                                        CANETA ESFEROGRAFICA ELETRONICA
-                                                        <div class="desc-produtos">
-                                                            ELETRIFICADOR DE CERCA SOLAR MONITOR SM140 B (1)
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="text-center" scope="row"><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
-                                                    <td class="text-center">7909438001494</td>
-                                                    <td>
-                                                        PEÇA - Caneta Uni Signo TSI Caixa c 24 Blister c 1 Unidades Azul
-                                                        <div class="desc-produtos">
-                                                            CANETA ESFEROGRAFICA GEL 0 7MM SIGNO TSI APAGAVEL AZUL UNIBALL BT 1 UN (1)
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="text-center" scope="row"><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
-                                                    <td class="text-center">7909438001517</td>
-                                                    <td>
-                                                        PEÇA - Caneta Uni Signo TSI Caixa c 24 Blister c 1 Unidades Preta
-                                                        <div class="desc-produtos">
-                                                            CANETA ESFEROGRAFICA GEL 0 7MM SIGNO TSI APAGAVEL PRETO UNIBALL BT 1 UN (1)
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="text-center">   
-                                    <button onclick="window.location.href='carrinho.html';" type="button" class="btn btn-menorpreco">Adicionar</button>
-                                </div>
-                            </div>
-                        </div>
+                        <button type="button" class="btn btn-menorpreco" onclick="window.location.href='filtro.html';">Continuar Filtros</button>
                     </div>
                 </div>
             </div>
@@ -197,6 +160,14 @@
             $(function () {
                 $('[data-toggle="tooltip"]').tooltip()
             })
+            window.toggleTable = function() {
+                $('.autocomplete-carrinho').toggleClass('hide');
+            };
+      
+            $('.fas').click(function() {
+                $(this).toggleClass('fa-plus');
+                $(this).toggleClass('fa-check');
+            });
         </script>
     </body>
 </html>

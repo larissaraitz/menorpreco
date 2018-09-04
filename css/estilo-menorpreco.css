@@ -3,8 +3,15 @@
     margin: 0;
     font-family: 'Hind', sans-serif;
 }
-input, input.form-control{
+input, input.form-control, select, select.form-control{
     border-radius: 0;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 /*NAVBAR*/
 .navbar{
@@ -88,7 +95,7 @@ input, input.form-control{
     color: #46aa34;
 }
 .step-desc.active{
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 /*TABELA*/
@@ -111,7 +118,7 @@ input, input.form-control{
     opacity: 0.8;
 }
 /*BOTÕES*/
-.conteudo-home .btn{
+.conteudo .btn{
     border-radius: 0;
     font-size: 18px
 }
@@ -241,13 +248,69 @@ input, input.form-control{
 }
 /*CARRINHO*/
 p.label-carrinho{
+    font-size: 18px;
+}
+.autocomplete-carrinho{
+    border-width: 0 1px 1px 1px;
+    border-color: #dee2e6;
+    border-style: solid;
+    box-shadow: 0px 2px 13px #bfbfbf;
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+}
+.table.autocomplete-carrinho th, .table.autocomplete-carrinho td{
+    border-top: 0;
+}
+.table.autocomplete-carrinho tr:hover{
+    background-color:  #f2f6f9;
+}
+.autocomplete-carrinho th{
+    padding: 0 0.6rem;
+    vertical-align: middle
+}
+.autocomplete-carrinho th .fas{
     font-size: 20px;
+}
+/*SLIDER*/
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2366B2;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2366B2;
+    cursor: pointer;
 }
 
 /*GENERICO*/
     .desabilitado{
         opacity: 0.7;
     }
+    .hide {
+        display: none;
+      }
     /*TAMANHOS*/
         .wp-100{
             width: 100%;
